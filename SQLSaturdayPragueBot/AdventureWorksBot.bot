@@ -1,0 +1,33 @@
+﻿{
+  "name": "AdventureWorksBot",
+  "services": [
+    {
+      "type": "endpoint",
+      "name": "development",
+      "endpoint": "http://localhost:3978/api/messages",
+      "appId": "",
+      "appPassword": "",
+      "id": "1"
+    },
+    {
+      "type": "endpoint",
+      "appId": "microsoft-app-id",
+      "appPassword": "microsoft-password",
+      "endpoint": "https://AdventureWorksBotGAB19Munich.azurewebsites.net/api/messages",
+      "name": "production",
+      "id": "4"
+    },
+    {
+      "type": "luis",
+      "name": "AdventureWorksBotBot",
+      "appId": "luis-app-id",
+      "version": "0.1",
+      "authoringKey": "luis-key",
+      "subscriptionKey": "luis-key",
+      "region": "westus",
+      "id": "158"
+    }
+  ],
+  "padlock": "",
+  "version": "2.0"
+}
