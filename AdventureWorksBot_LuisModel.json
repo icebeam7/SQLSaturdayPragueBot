@@ -1,0 +1,236 @@
+{
+  "luis_schema_version": "5.0.0",
+  "versionId": "0.1",
+  "name": "AdventureWorksBot",
+  "desc": "A bot which based on Adventure Works database",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "AddToCart"
+    },
+    {
+      "name": "Login"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "PlaceOrder"
+    },
+    {
+      "name": "ProductInfo"
+    }
+  ],
+  "entities": [
+    {
+      "name": "ProductName",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "Product",
+      "subLists": [
+        {
+          "canonicalForm": "product",
+          "list": [
+            "product",
+            "item",
+            "products",
+            "items"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "email",
+      "roles": []
+    },
+    {
+      "name": "number",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "add product 123 to the cart",
+      "intent": "AddToCart",
+      "entities": []
+    },
+    {
+      "text": "addition product fifteen to the shopping cart",
+      "intent": "AddToCart",
+      "entities": []
+    },
+    {
+      "text": "checkout please",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "complete the order please",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "credentials info: tony@yahoo.com",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "do you have caps?",
+      "intent": "ProductInfo",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "get into the system",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "how much am i paying?",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "i want to access the system",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "i want to know the price of a mountain bike",
+      "intent": "ProductInfo",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 30,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "i want to log in",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "i want to see the product list",
+      "intent": "ProductInfo",
+      "entities": []
+    },
+    {
+      "text": "i would like to enter my credentials",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "i'm finished",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "include product seven in the order",
+      "intent": "AddToCart",
+      "entities": []
+    },
+    {
+      "text": "login, please",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "my email is tony@hotmail.com",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "my username is tony@gmail.com",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "place product 2 in the cart",
+      "intent": "AddToCart",
+      "entities": []
+    },
+    {
+      "text": "place the order",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "request product 9 please",
+      "intent": "AddToCart",
+      "entities": []
+    },
+    {
+      "text": "show me the top items",
+      "intent": "ProductInfo",
+      "entities": []
+    },
+    {
+      "text": "submit product 14 to the order",
+      "intent": "AddToCart",
+      "entities": []
+    },
+    {
+      "text": "tell me more about helmets",
+      "intent": "ProductInfo",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 19,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "that's all i need",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "what can you tell me about bikes?",
+      "intent": "ProductInfo",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 27,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "what products do you sell?",
+      "intent": "ProductInfo",
+      "entities": []
+    },
+    {
+      "text": "what's the final cost?",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "which products do you have to offer?",
+      "intent": "ProductInfo",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
